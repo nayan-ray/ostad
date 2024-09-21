@@ -1,0 +1,8 @@
+.topBar{
+    width: 100%;
+    .topBar-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
