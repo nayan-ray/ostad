@@ -3,6 +3,7 @@
     height: 72px;
     background: #FFFFFF;
     padding-top: 10px;
+    box-shadow: 0 4px 8px -8px rgba(8, 31, 77, .2);
     
   
     .topBar-wrapper{
@@ -66,6 +67,7 @@
                     .topBar-item{
                         margin-right: 8px;
                         padding: 8px 6px;
+                        cursor: pointer;
                         &:hover{
                             background : #EAECF0;
                         }
@@ -120,6 +122,60 @@
 
                 .course-icon{
                     margin-left: 8px;
+                }
+            }
+            .profile-button-section{
+                margin-left: 8px;
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+
+                .dashboard{
+                    padding: 10px 24px;
+                    color: #fff;
+                    background: #101828;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    &:hover{
+                        background: #1D2939;
+                    }
+                    .dashboard-icon{
+                        margin-left: 8px;
+                        background: #fff;
+                        max-width: 16px;
+                        object-fit: contain;
+                        
+                    }
+                }
+                
+
+
+                .profile-btn{
+                    position: relative;
+                    cursor: pointer;
+                   
+                    .person-icon{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    .icon-div{
+                        position: absolute;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        background-color: #D0D5DD;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        top: 16px;
+                        left: 18px;
+
+                        .arrow-down-icon{
+                            font-size: 15px;
+                        }
+                    }
                 }
             }
         }
