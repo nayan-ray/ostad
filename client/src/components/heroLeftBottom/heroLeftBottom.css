@@ -1,0 +1,23 @@
+.hero-left-bottom{
+    padding-top: 24px;
+    padding-right: 24px;
+    p{
+        font-weight: 600;
+    }
+    .logo-sect{
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        img{
+            height: 20px;
+            width: auto;
+            filter: grayscale(1);
+            transition: all  0.3s ease-in-out;
+
+            &:hover{
+                filter: grayscale(0);
+            }
+        }
+    }
+
+}
