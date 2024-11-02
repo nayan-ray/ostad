@@ -1,0 +1,9 @@
+.course-section{
+    width: 100%;
+    .course-container{
+        background-color: #FFFFFF;
+        max-width: 1150px;
+        margin: auto;
+    }
+
+}
