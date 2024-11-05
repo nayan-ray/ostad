@@ -1,9 +1,87 @@
 .course-section{
     width: 100%;
+    box-sizing: border-box;
+    margin-top: 70px;
     .course-container{
+        padding: 20px;
+        border-radius: 15px;
         background-color: #FFFFFF;
         max-width: 1150px;
         margin: auto;
+        .course-wrapper{
+
+           
+
+            .course-top{
+                .course-title-section{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    h1{
+                        font-size: 36px;
+                        font-weight: 900;
+                        color: #030407;
+                    }
+                    img{
+                        align-self: baseline;
+                        margin-left: 8px;
+                        padding-top: 4px;
+                    }
+                }
+            }
+            .course-center{
+                position: relative;
+                margin-bottom: 24px;
+                overflow: hidden;
+                .arrow{
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: #FFFFFF;
+                    color: #030407;
+                    position: absolute;
+                    
+                    cursor: pointer;
+                    &:hover{
+                        background: #FFF2CC;
+                    }
+                    .Icon{
+                        font-size: 16px;
+                    }
+
+                }
+                .back{
+                    top:  0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    padding-left: 5px;
+                }
+                .forward{
+                    top:  0;
+                    bottom: 0;
+                    right: 0;
+                    margin: auto;
+                    
+                }     
+                .course-center-container{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    
+                }
+            }
+        }
+
+        .course-bottom{
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            overflow: hidden;
+            gap: 16px;
+        }
     }
 
 }

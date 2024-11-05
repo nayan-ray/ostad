@@ -3,6 +3,8 @@ import "./course.css"
 import bookIcon from "../../assets/images/book-2-icons.svg"
 import Category from '../category/Category'
 import CourseItem from '../courseItem/CourseItem'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const Course = () => {
   return (
@@ -18,12 +20,31 @@ const Course = () => {
                     <div className="course-center">
                         <div className="course-center-container">
                               <Category  />
-
+                              <Category  />
+                              <Category  />
+                              <Category  />
+                              <Category  />
+                              <Category  />
+                              <Category  />
+                              <Category  />
+                        </div>
+                        <div className="back arrow">
+                              <ArrowBackIosIcon  className='Icon'/> 
+                        </div>
+                        <div className="forward arrow">
+                              <ArrowForwardIosIcon className='Icon' />
                         </div>
                     </div>
                     <div className="course-bottom">
                         <CourseItem  />
-
+                        <CourseItem  />
+                        <CourseItem  />
+                        <CourseItem  />
+                        <CourseItem  />
+                        <CourseItem  />
+                        <CourseItem  />
+                        <CourseItem  />
+              
                     </div>
                </div>
          </div>

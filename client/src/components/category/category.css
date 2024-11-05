@@ -1,0 +1,37 @@
+.category{
+    padding: 10px 16px 12px;
+    background: #1D2939;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 16px;
+    width: fit-content;
+    .category-wrapper{
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        .img-container{
+           width: 30px;
+           height: 30px;
+           border-radius: 50%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background: #fff;
+           img{
+             width: 20px;
+           }
+        }
+        .category-desc{
+            line-height: 0.7;
+            align-items: center;
+            font-size: 14px;
+            margin-left: 8px;
+            h3{
+                font-size: 14px;
+                
+            }
+           
+        }
+
+    }
+}
