@@ -5,6 +5,7 @@ import Category from '../category/Category'
 import CourseItem from '../courseItem/CourseItem'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Course = () => {
   return (
@@ -45,6 +46,11 @@ const Course = () => {
                         <CourseItem  />
                         <CourseItem  />
               
+                    </div>
+                    <div className="course-bottom-button">
+                        <div className="course-button-container">
+                            সব দেখুন <ArrowForwardIcon className='arrowICon'/>
+                        </div>
                     </div>
                </div>
          </div>

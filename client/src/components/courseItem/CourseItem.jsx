@@ -6,7 +6,7 @@ import BatchItem from '../batch-item/BatchItem';
 
 const CourseItem = () => {
   return (
-    <div  className="course-item hoverEffect">
+    <div  className="course-item-section hoverEffect">
         <div className="course-item-container">
              <div className="course-item-image ">
                 <img src={courseThamnail} alt="" />
