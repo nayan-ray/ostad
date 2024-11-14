@@ -2,6 +2,7 @@ import React from 'react'
 import "./webinar.css"
 import webinar123 from "../../assets/images/importanIcon/Webinar123.svg"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import WebinarItem from '../webinarItem/WebinarItem';
 
 const Webinar = () => {
   return (
@@ -17,7 +18,12 @@ const Webinar = () => {
                        <span>আপকামিং লাইভ ওয়েবিনার</span>
                        <div></div>
                     </div>
-                    <div className="webinar-items"></div>
+                    <div className="webinar-items">
+                        <WebinarItem />
+                        <WebinarItem />
+                        <WebinarItem />
+                        <WebinarItem />
+                    </div>
                     <div className="webinar-button">
                         <button>
                             সব ওয়েবিনার দেখুন  <ArrowForwardIcon className='icon-webinar'/>
