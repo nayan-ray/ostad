@@ -1,0 +1,44 @@
+.goal-item{
+    background: rgb(243 244 247);
+    border: 1px solid #eaecf0;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 16px 0;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid #c5c5c5;
+        background: #fff;
+    }
+    .goalItem-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        .img-div{
+            width: fit-content;
+            background: #fff;
+            padding: 10px;
+            border-radius: 50%;
+        }
+            img{
+                width: 24px;
+            }
+        }
+        .goal-info{
+            text-align: center;
+            line-height: 8px;
+            h2{
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 0.2px;
+                color: rgb(16 24 40);
+                opacity: 0.9;
+               
+            }
+            span{
+                font-size: 14px;
+                color: #656565;
+            }
+        }
+    }

@@ -1,0 +1,26 @@
+.goal{
+    width: 100%;
+    margin: 70px 0;
+    .goal-container{
+        max-width: 1150px;
+        margin: auto;
+        .goal-wrapper{
+            .goal-top{
+                text-align: center;
+                h1{
+                    font-size: 36px;
+                    font-weight: 700;
+                    color: rgb(80 96 111);
+                }
+                p{
+                    color: gray;
+                }
+            }
+            .goal-bottom{
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 16px;
+            }
+        }
+    }
+}

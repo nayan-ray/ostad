@@ -1,0 +1,27 @@
+.live-course-item{
+    background: #fff;
+    padding: 16px;
+    .live-course-item-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .live-course-item-image{
+              img{
+                max-width: 55px;;
+              }
+        }
+        .live-course-info{
+            text-align: center;
+            margin-top: 10px;
+            .live-course-info-title{
+               font-size: 20px;
+               font-weight: 700;
+            }
+            .live-course-info-description{
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}

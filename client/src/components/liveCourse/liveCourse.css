@@ -1,0 +1,28 @@
+.live-course{
+    margin: 90px 0;
+    .live-course-container{
+        max-width: 1150px;
+        margin: auto;
+        .live-course-wrapper{
+            .live-course-top{
+                text-align: center;
+                h1{
+                    font-size: 36px;
+                    font-weight: 700;
+                    
+                }
+            }
+            .live-course-bottom{
+                background: #fff;
+                padding: 20px;
+                .live-course-bottom-container{
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    gap: 2px;
+                    background: #ededed;
+                }
+            }
+            
+        }
+    }
+}

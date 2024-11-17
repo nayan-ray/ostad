@@ -1,13 +1,17 @@
 .webinar{
+    margin: 40px 0;
     .webinar-container{
         background: #101828;
         max-width: 1150px;
         padding: 24px;
         margin: auto;
         border-radius: 16px;
+     .webinar-wrapper{
 
+       
         .webinar-title{
             text-align: center;
+            margin: 36px 0;
             h1{
                 font-size: 36px;
                 font-weight: 600;
@@ -21,8 +25,11 @@
             display: flex;
             align-items: center;
             gap: 16px;
+            img{
+                width: 30px;
+            }
             span{
-                font-size: 26px;
+                font-size: 20px;
                 color: #fff;
                 font-weight: 700;
             }
@@ -36,13 +43,16 @@
         .webinar-items{
              display: grid;
              grid-template-columns: repeat(4,minmax(0, 1fr));
-             gap: 16px;
+             gap: 20px;
              overflow: hidden;
+             margin: 24px 0 36px;
+             cursor: pointer;
         }
         .webinar-button{
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-bottom: 16px;
             button{
                 font-size: 14px;
                 font-weight: 700;
@@ -58,6 +68,42 @@
                     margin-left: 8px;
                 }
             }
+        }
+    }
+  } 
+}
+
+
+@media(max-width : 1023px){
+    .webinar{
+        .webinar-container{
+             max-width: 689px;
+             .webinar-wrapper{
+                .webinar-items{
+                    grid-template-columns: repeat(2,minmax(0, 1fr));
+                }
+             }
+        }
+    }
+}
+
+@media(max-width : 767px){
+    .webinar{
+        .webinar-container{
+             max-width: 100%;
+             padding:5px 14px ;
+             .webinar-wrapper{
+                .webinar-title{     
+                    margin: 16px 0;               
+                    h1{
+                        font-size: 28px;
+                    }
+                }
+                .webinar-items{
+                    grid-template-columns: repeat(2,minmax(0, 1fr));
+                    margin: 16px 0;
+                }
+             }
         }
     }
 }

@@ -4,6 +4,8 @@ import Topbar from '../../components/topbar/Topbar'
 import Hero from '../../components/hero/Hero'
 import Course from '../../components/course/Course'
 import Webinar from '../../components/webinar/Webinar'
+import Goal from '../../components/goal/Goal'
+import LiveCourse from '../../components/liveCourse/LiveCourse'
 
 const Home = () => {
   return (
@@ -12,7 +14,8 @@ const Home = () => {
          <Hero  />
          <Course  />
          <Webinar />
-
+         <Goal />
+         <LiveCourse />
     </div>
   )
 }
