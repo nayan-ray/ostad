@@ -11,7 +11,7 @@ const GoalItem = () => {
              </div>
              <div className="goal-info">
                  <h2>Web & App Development</h2>
-                 <span>• ৩০ কোর্স  • ৫ ওয়ার্কশপ</span>
+                 <p>• ৩০ কোর্স  • ৫ ওয়ার্কশপ</p>
              </div>
         </div>
     </div>

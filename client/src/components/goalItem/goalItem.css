@@ -36,9 +36,10 @@
                 opacity: 0.9;
                
             }
-            span{
+            p{
                 font-size: 14px;
                 color: #656565;
+                line-height: 22px;
             }
         }
     }

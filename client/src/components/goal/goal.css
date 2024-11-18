@@ -24,3 +24,45 @@
         }
     }
 }
+
+
+@media(max-width : 1023px){
+    .goal{
+        .goal-container{
+            max-width: 689px;
+            .goal-wrapper{
+                 .goal-bottom{
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                 }
+            }
+
+        }
+    }
+}
+
+@media(max-width : 767px){
+    .goal{
+        .goal-container{
+            max-width: 500px;
+            .goal-wrapper{
+                 .goal-bottom{
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                 }
+            }
+
+        }
+    }
+}
+@media(max-width : 639px){
+    .goal{
+        .goal-container{
+            max-width: 100%;
+            padding: 16px;
+            .goal-wrapper{
+                max-width: 100%;
+                 
+            }
+
+        }
+    }
+}

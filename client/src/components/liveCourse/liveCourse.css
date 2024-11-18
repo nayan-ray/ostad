@@ -26,3 +26,68 @@
         }
     }
 }
+
+
+@media(max-width :1023px){
+    .live-course{
+        .live-course-container{
+            max-width: 689px;
+            .live-course-wrapper{
+                .live-course-bottom{
+                    .live-course-bottom-container{
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width :767px){
+    .live-course{
+        margin: 0;
+        .live-course-container{
+            max-width: 500px;
+            .live-course-wrapper{
+                 .live-course-top{
+                    h1{
+                        font-size: 26px;
+                    }
+                 }
+                .live-course-bottom{
+                    background: #F9F9FA;
+                    padding: 0;
+                    .live-course-bottom-container{
+                        gap: 4px;
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width :639px){
+    .live-course{
+        margin: 0;
+        .live-course-container{
+            max-width: 100%;
+            padding: 16px;
+            .live-course-wrapper{
+                 .live-course-top{
+                    h1{
+                        font-size: 26px;
+                    }
+                 }
+                .live-course-bottom{
+                    background: #F9F9FA;
+                    padding: 0;
+                    .live-course-bottom-container{
+                        gap: 4px;
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                    }
+                }
+            }
+        }
+    }
+}
