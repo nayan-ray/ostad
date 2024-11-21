@@ -1,6 +1,7 @@
 .goal{
     width: 100%;
     margin: 70px 0;
+    padding: 0 24px;
     .goal-container{
         max-width: 1150px;
         margin: auto;
@@ -55,9 +56,10 @@
 }
 @media(max-width : 639px){
     .goal{
+        padding: 0 16px;
         .goal-container{
             max-width: 100%;
-            padding: 16px;
+            /* padding: 16px; */
             .goal-wrapper{
                 max-width: 100%;
                  

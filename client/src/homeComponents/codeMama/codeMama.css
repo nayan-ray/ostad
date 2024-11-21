@@ -1,0 +1,56 @@
+.code-mama{
+    margin-bottom: 500px;
+    background: #F9F9FA;
+    .code-mama-container{
+        max-width: 1150px;
+        margin: auto;
+        overflow: hidden;
+        .code-mama-wrapper{
+            display: grid;
+            gap: 24px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            padding: 8px;
+        }
+    }
+}
+
+@media(max-width : 1023px){
+    .code-mama{
+       
+        .code-mama-container{
+            max-width: 689px;
+
+            .code-mama-wrapper{
+
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+                padding: 8px;
+            }
+        }
+    }
+}
+
+@media(max-width : 767px){
+    .code-mama{
+       
+        .code-mama-container{
+            max-width: 500px;
+
+            .code-mama-wrapper{
+               gap: 16px;
+            }
+        }
+    }
+}
+
+@media(max-width : 767px){
+    .code-mama{
+       
+        .code-mama-container{
+
+
+            .code-mama-wrapper{
+             padding: 8px;
+            }
+        }
+    }
+}

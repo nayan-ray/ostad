@@ -6,6 +6,7 @@ import Course from '../../components/course/Course'
 import Webinar from '../../components/webinar/Webinar'
 import Goal from '../../components/goal/Goal'
 import LiveCourse from '../../components/liveCourse/LiveCourse'
+import CodeMama from '../../homeComponents/codeMama/CodeMama'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
          <Webinar />
          <Goal />
          <LiveCourse />
+         <CodeMama />
     </div>
   )
 }

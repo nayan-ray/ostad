@@ -1,5 +1,6 @@
 .live-course{
     margin: 90px 0;
+    padding: 0 24px;
     .live-course-container{
         max-width: 1150px;
         margin: auto;
@@ -30,6 +31,7 @@
 
 @media(max-width :1023px){
     .live-course{
+        margin: 70px 0;
         .live-course-container{
             max-width: 689px;
             .live-course-wrapper{
@@ -45,7 +47,7 @@
 
 @media(max-width :767px){
     .live-course{
-        margin: 0;
+        margin: 30px 0;
         .live-course-container{
             max-width: 500px;
             .live-course-wrapper{
@@ -70,9 +72,10 @@
 @media(max-width :639px){
     .live-course{
         margin: 0;
+        padding: 0 16px;
         .live-course-container{
             max-width: 100%;
-            padding: 16px;
+            /* padding: 16px; */
             .live-course-wrapper{
                  .live-course-top{
                     h1{
