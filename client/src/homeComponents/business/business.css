@@ -1,0 +1,152 @@
+.business{
+    background: #FFFFFF;
+    padding: 60px 16px;
+    .business-container{
+        max-width: 1150px;
+        background: #F9F9FA;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 20px;
+        border-radius: 8px;
+        .business-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            .business-left{
+               
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                
+                .business-info{
+                     h1{
+                        line-height: 130%;
+                        font-weight: 700;
+                        font-size: 36px;
+                        margin-bottom: 16px;
+                     }
+                     p{
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                        letter-spacing: .32px;
+                        font-weight: 400;
+
+                     }
+                }
+                button{
+                    width: fit-content;
+                    font-size: 14px ;
+                    line-height: 1.25rem ;
+                    font-weight: 600;
+                    padding: 12px 80px;
+                    border-radius: 8px;
+                    background: #FFC000;
+                    border: none;
+                    outline: none;
+                    white-space: nowrap;
+                    margin: 14px 0 24px;
+                    img{
+                        margin-left: 8px;
+                    }
+                }
+                .client-info{
+                    h3{
+                        line-height: 130%;
+                        font-weight: 700;
+                        font-size: 26px;
+                        color: rgb(29 41 57);
+                    }
+                    .client-logos{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 16px;
+                        img{
+                            height: 2.5rem;
+                            margin-right: 24px;
+                            filter: grayscale(1);
+                            &:hover {
+                                filter: grayscale(0);
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .business-right{
+                width: 478px;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width : 1023px){
+   .business{
+      .business-container{
+        max-width:  689px;
+          .business-wrapper{
+              flex-direction: column;
+              .business-left{
+                 order: 2;
+                 align-items: center;
+                 .business-info{
+                    h1{
+                        text-align: center;
+                    }
+                 }
+                 .client-info{
+                    h3{
+                        text-align: center;
+                        margin-bottom: 12px;
+                    }
+                 }
+              }
+              .business-right{
+                 order: 1;
+                 width: 100%;
+                 overflow: hidden;
+              }
+          }
+      }
+   }
+}
+
+
+@media(max-width : 767px){
+    .business{
+       .business-container{
+         max-width:  500px;
+           .business-wrapper{
+               flex-direction: column;
+               .business-left{
+                  order: 2;
+                  align-items: center;
+                  .business-info{
+                     h1{
+                         text-align: left;
+                     }
+                  }
+                  button{
+                    width: 100%;
+                  }
+                  .client-info{
+                     h3{
+                         text-align: center;
+                         margin-bottom: 12px;
+                     }
+                  }
+               }
+               .business-right{
+                  order: 1;
+                  width: 100%;
+                  overflow: hidden;
+               }
+           }
+       }
+    }
+ }

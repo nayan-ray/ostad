@@ -7,6 +7,7 @@ import Webinar from '../../components/webinar/Webinar'
 import Goal from '../../components/goal/Goal'
 import LiveCourse from '../../components/liveCourse/LiveCourse'
 import CodeMama from '../../homeComponents/codeMama/CodeMama'
+import Business from '../../homeComponents/business/Business'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
          <Goal />
          <LiveCourse />
          <CodeMama />
+         <Business />
     </div>
   )
 }

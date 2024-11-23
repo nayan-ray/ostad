@@ -14,17 +14,19 @@ const Business = () => {
             <div className="business-wrapper">
                 <div className="business-left">
                      <div className="business-info">
-                        <h3>Ostad for business</h3>
+                        <h1>Ostad for business</h1>
                         <p>জয়েন করুন আমাদের কর্পোরেট স্কিলস ট্রেইনিং প্রোগ্রামে, ট্রেইনিং নিন দেশ সেরা ইন্ডাস্ট্রি এক্সপার্টদের থেকে আর সাজিয়ে নিন আপনার টিমকে নতুনভাবে।</p>
                      </div>
-                     <button>বিস্তারিত দেখি</button>
+                     <button>বিস্তারিত দেখি 
+                        <img src="https://cdn.ostad.app/public/icons/arrow-right-s-line.svg" alt="" />
+                     </button>
                      <div className="client-info">
                         <h3>আমাদের ক্লায়েন্ট</h3>
                         <div className="client-logos">
                             <img src={client} alt="" />
                             <img src={min} alt="" />
                             <img src={amara} alt="" />
-                            <img src={min2} alt="" />
+                            <img className='min2' src={min2} alt="" />
                         </div>
                      </div>
                 </div>
