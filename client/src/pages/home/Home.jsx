@@ -8,6 +8,7 @@ import Goal from '../../components/goal/Goal'
 import LiveCourse from '../../components/liveCourse/LiveCourse'
 import CodeMama from '../../homeComponents/codeMama/CodeMama'
 import Business from '../../homeComponents/business/Business'
+import RateCount from '../../homeComponents/rateCount/RateCount'
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
          <LiveCourse />
          <CodeMama />
          <Business />
+         <RateCount />
     </div>
   )
 }

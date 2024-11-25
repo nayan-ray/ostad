@@ -1,0 +1,41 @@
+.rate-count{
+    padding: 0 16px;
+    .rateCount-container{
+        max-width: 1150px;
+        margin:  0 auto;
+        overflow: hidden;
+        .rateCount-wrapper{
+              display: flex;
+              flex-wrap: nowrap;
+              gap: 16px; 
+        }
+    }
+}
+
+@media(max-width : 1023px){
+    .rate-count{
+        .rateCount-container{
+            max-width: 689px;
+        }
+    }
+}
+
+@media(max-width : 767px){
+    .rate-count{
+        .rateCount-container{
+            max-width: 500px;
+            .rateCount-wrapper{
+                flex-wrap: wrap;
+                gap: 12;               
+            } 
+        }
+    }
+}
+
+@media(max-width : 639px){
+    .rate-count{
+        .rateCount-container{
+            max-width: 100%;
+        }
+    }
+}
