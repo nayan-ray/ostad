@@ -1,0 +1,717 @@
+.graduate-comment{
+    padding: 0 16px;
+    margin: 70px 0 60px;
+    .graduate-comment-container{
+        max-width: 1150px;
+        margin: 0 auto;
+        .graduate-comment-wrapper{
+            .graduate-comment-title{
+                margin-bottom: 40px;
+                text-align: center;
+                 h1{
+                    line-height: 130%;
+                    font-weight: 700;
+                    font-size: 36px;
+                    margin-bottom: 16px;
+                   
+                 }
+                 span{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    letter-spacing: .32px;
+                    font-weight: 400;
+                 }
+            }
+            .graduate-comment-contents{
+                display: flex;
+                gap: 12px;
+                
+                .graduate-comment-contents-left{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    .comments-left-container{
+                        padding: 12px;
+                        background: #fff;
+                        border: 1px solid #ddd;
+                        border-radius: 7px;
+                        .comments-left-wrapper{
+                             p{
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 18.2px;
+                                letter-spacing: .32px;
+                                text-align: justify;
+                                margin-bottom: 0;
+                                color: rgb(102 112 133);
+                             }
+                            .hr{
+                                height: 1px;
+                                width: 100%;
+                                background-color: gray;
+                                margin: 8px 0 12px;
+                            }
+                            .learner-info{
+                                display: flex;
+                                .info-left{
+                                    flex: 3;
+                                    .user-img{
+                                        img{
+                                            width: 32px;
+                                            height: 32px;
+                                            border-radius: 50%;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                    .info-body{
+                                        line-height: 15px;
+                                        margin-top: 16px;
+                                        h3{
+                                            font-size: 1rem;
+                                            line-height: 1rem;
+                                            letter-spacing: .32px;
+                                            font-weight: 600;
+                                            white-space: nowrap;
+                                        }
+                                        span{
+                                            font-size: 12px;
+                                            line-height: 15.6px;
+                                            letter-spacing: .24px;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                                .info-right{
+                                    flex: 1;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-end;
+                                }
+                            }
+                        }
+                    }
+                }
+                .graduate-comment-contents-center{
+                    flex: 2;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    .center-top{
+                        .comments-left-container{
+                            padding: 12px;
+                            background: #fff;
+                            border: 1px solid #ddd;
+                            border-radius: 7px;
+                            .comments-left-wrapper{
+                                 p{
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    line-height: 18.2px;
+                                    letter-spacing: .32px;
+                                    text-align: justify;
+                                    margin-bottom: 0;
+                                    color: rgb(102 112 133);
+                                 }
+                                .hr{
+                                    height: 1px;
+                                    width: 100%;
+                                    background-color: gray;
+                                    margin: 8px 0 12px;
+                                }
+                                .learner-info{
+                                    display: flex;
+                                    .info-left{
+                                        flex: 3;
+                                        display: flex;
+                                        gap: 16px;
+                                        align-items: center;
+                                        .user-img{
+                                            img{
+                                                width: 32px;
+                                                height: 32px;
+                                                border-radius: 50%;
+                                                object-fit: cover;
+                                            }
+                                        }
+                                        .info-body{
+                                            line-height: 15px;
+                                            margin-top: 12px;
+                                            h3{
+                                                font-size: 1rem;
+                                                line-height: 1rem;
+                                                letter-spacing: .32px;
+                                                font-weight: 600;
+                                                white-space: nowrap;
+                                            }
+                                            span{
+                                                font-size: 12px;
+                                                line-height: 15.6px;
+                                                letter-spacing: .24px;
+                                                font-weight: 500;
+                                            }
+                                        }
+                                    }
+                                    .info-right{
+                                        flex: 1;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: flex-end;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .center-bottom{
+                        display: flex;
+                        gap: 12px;
+                        .center-bottom-left{
+                            flex: 1;
+                            .comments-left-container{
+                                padding: 12px;
+                                background: #fff;
+                                border: 1px solid #ddd;
+                                border-radius: 7px;
+                                .comments-left-wrapper{
+                                     p{
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        line-height: 18.2px;
+                                        letter-spacing: .32px;
+                                        text-align: justify;
+                                        margin-bottom: 0;
+                                        color: rgb(102 112 133);
+                                     }
+                                    .hr{
+                                        height: 1px;
+                                        width: 100%;
+                                        background-color: gray;
+                                        margin: 8px 0 12px;
+                                    }
+                                    .learner-info{
+                                        display: flex;
+                                        .info-left{
+                                            flex: 3;
+                                            .user-img{
+                                                img{
+                                                    width: 32px;
+                                                    height: 32px;
+                                                    border-radius: 50%;
+                                                    object-fit: cover;
+                                                }
+                                            }
+                                            .info-body{
+                                                line-height: 15px;
+                                                margin-top: 16px;
+                                                h3{
+                                                    font-size: 1rem;
+                                                    line-height: 1rem;
+                                                    letter-spacing: .32px;
+                                                    font-weight: 600;
+                                                    white-space: nowrap;
+                                                }
+                                                span{
+                                                    font-size: 12px;
+                                                    line-height: 15.6px;
+                                                    letter-spacing: .24px;
+                                                    font-weight: 500;
+                                                }
+                                            }
+                                        }
+                                        .info-right{
+                                            flex: 1;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: flex-end;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .center-bottom-right{
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 12px;
+                            .center-bottom-right-top{
+                                .comments-left-container{
+                                    padding: 12px;
+                                    background: #fff;
+                                    border: 1px solid #ddd;
+                                    border-radius: 7px;
+                                    .comments-left-wrapper{
+                                         p{
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            line-height: 18.2px;
+                                            letter-spacing: .32px;
+                                            text-align: justify;
+                                            margin-bottom: 0;
+                                            color: rgb(102 112 133);
+                                         }
+                                        .hr{
+                                            height: 1px;
+                                            width: 100%;
+                                            background-color: gray;
+                                            margin: 8px 0 12px;
+                                        }
+                                        .learner-info{
+                                            display: flex;
+                                            .info-left{
+                                                flex: 3;
+                                                .user-img{
+                                                    img{
+                                                        width: 32px;
+                                                        height: 32px;
+                                                        border-radius: 50%;
+                                                        object-fit: cover;
+                                                    }
+                                                }
+                                                .info-body{
+                                                    line-height: 15px;
+                                                    margin-top: 16px;
+                                                    h3{
+                                                        font-size: 1rem;
+                                                        line-height: 1rem;
+                                                        letter-spacing: .32px;
+                                                        font-weight: 600;
+                                                        white-space: nowrap;
+                                                    }
+                                                    span{
+                                                        font-size: 12px;
+                                                        line-height: 15.6px;
+                                                        letter-spacing: .24px;
+                                                        font-weight: 500;
+                                                    }
+                                                }
+                                            }
+                                            .info-right{
+                                                flex: 1;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: flex-end;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .center-bottom-right-bottom{
+                                .comments-left-container{
+                                    padding: 12px;
+                                    background: #fff;
+                                    border: 1px solid #ddd;
+                                    border-radius: 7px;
+                                    .comments-left-wrapper{
+                                         p{
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            line-height: 18.2px;
+                                            letter-spacing: .32px;
+                                            text-align: justify;
+                                            margin-bottom: 0;
+                                            color: rgb(102 112 133);
+                                         }
+                                        .hr{
+                                            height: 1px;
+                                            width: 100%;
+                                            background-color: gray;
+                                            margin: 8px 0 12px;
+                                        }
+                                        .learner-info{
+                                            display: flex;
+                                            .info-left{
+                                                flex: 3;
+                                                .user-img{
+                                                    img{
+                                                        width: 32px;
+                                                        height: 32px;
+                                                        border-radius: 50%;
+                                                        object-fit: cover;
+                                                    }
+                                                }
+                                                .info-body{
+                                                    line-height: 15px;
+                                                    margin-top: 16px;
+                                                    h3{
+                                                        font-size: 1rem;
+                                                        line-height: 1rem;
+                                                        letter-spacing: .32px;
+                                                        font-weight: 600;
+                                                        white-space: nowrap;
+                                                    }
+                                                    span{
+                                                        font-size: 12px;
+                                                        line-height: 15.6px;
+                                                        letter-spacing: .24px;
+                                                        font-weight: 500;
+                                                    }
+                                                }
+                                            }
+                                            .info-right{
+                                                flex: 1;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: flex-end;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .graduate-comment-contents-right{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    .comments-left-container{
+                        padding: 12px;
+                        background: #fff;
+                        border: 1px solid #ddd;
+                        border-radius: 7px;
+                        .comments-left-wrapper{
+                             p{
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 18.2px;
+                                letter-spacing: .32px;
+                                text-align: justify;
+                                margin-bottom: 0;
+                                color: rgb(102 112 133);
+                             }
+                            .hr{
+                                height: 1px;
+                                width: 100%;
+                                background-color: gray;
+                                margin: 8px 0 12px;
+                            }
+                            .learner-info{
+                                display: flex;
+                                .info-left{
+                                    flex: 3;
+                                    .user-img{
+                                        img{
+                                            width: 32px;
+                                            height: 32px;
+                                            border-radius: 50%;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                    .info-body{
+                                        line-height: 15px;
+                                        margin-top: 16px;
+                                        h3{
+                                            font-size: 1rem;
+                                            line-height: 1rem;
+                                            letter-spacing: .32px;
+                                            font-weight: 600;
+                                            white-space: nowrap;
+                                        }
+                                        span{
+                                            font-size: 12px;
+                                            line-height: 15.6px;
+                                            letter-spacing: .24px;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                                .info-right{
+                                    flex: 1;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-end;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width : 1023px){
+    .graduate-comment{
+
+        .graduate-comment-container{
+            max-width: 689px;
+            overflow: hidden;
+            .graduate-comment-wrapper{
+                .graduate-comment-title{
+                   
+                     h1{
+                     }
+                     span{
+                     }
+                }
+                .graduate-comment-contents{
+                     flex-direction: column;
+                    .graduate-comment-contents-left{
+
+                        .comments-left-container{
+
+                            .comments-left-wrapper{
+                                 p{
+                                 }
+                                .hr{
+                                    margin: 8px 0 0;
+                                    opacity: 0.3;
+                                }
+                                .learner-info{
+                                    display: flex;
+                                    
+                                    .info-left{
+                                        display: flex;
+                                        gap: 12px;
+                                        align-items: center;
+                                    
+                                        .user-img{
+                                            img{
+                                                
+                                            }
+                                        }
+                                        .info-body{
+                                           
+                                            h3{
+                                                
+                                            }
+                                            span{
+                                               
+                                            }
+                                        }
+                                    }
+                                    .info-right{
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .graduate-comment-contents-center{
+
+                        .center-top{
+                            .comments-left-container{
+                                .comments-left-wrapper{
+                                     p{
+                                       
+                                     }
+                                    .hr{
+                                        margin: 8px 0 0;
+                                        opacity: 0.3;
+                                    }
+                                    .learner-info{
+                                      
+                                        .info-left{
+                                           
+                                            .user-img{
+                                                img{
+                                                  
+                                                }
+                                            }
+                                            .info-body{
+                                                
+                                                h3{
+                                                    
+                                                }
+                                                span{
+                                                    
+                                                }
+                                            }
+                                        }
+                                        .info-right{
+                                           
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .center-bottom{
+                            flex-direction: column;
+                            .center-bottom-left{
+                                .comments-left-container{
+                                    
+                                    .comments-left-wrapper{
+                                         p{
+                                           
+                                         }
+                                        .hr{
+                                            margin: 8px 0 0;
+                                            opacity: 0.3;
+                                        }
+                                        .learner-info{
+                                            .info-left{
+                                                display: flex;
+                                                gap: 12px;
+                                                align-items: center;
+                                                .user-img{
+                                                    img{
+                                                       
+                                                    }
+                                                }
+                                                .info-body{
+                                                   
+                                                    h3{
+                                                       
+                                                    }
+                                                    span{
+                                                        
+                                                    }
+                                                }
+                                            }
+                                            .info-right{
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .center-bottom-right{
+
+                                .center-bottom-right-top{
+                                    .comments-left-container{
+                                       
+                                        .comments-left-wrapper{
+                                             p{
+                                               
+                                             }
+                                            .hr{
+                                                margin: 8px 0 0;
+                                                opacity: 0.3;
+                                            }
+                                            .learner-info{
+                                               
+                                                .info-left{
+                                                    display: flex;
+                                                    gap: 12px;
+                                                    align-items: center;
+                                                    .user-img{
+                                                        img{
+                                                           
+                                                        }
+                                                    }
+                                                    .info-body{
+                                                       
+                                                        h3{
+                                                           
+                                                        }
+                                                        span{
+                                                          
+                                                        }
+                                                    }
+                                                }
+                                                .info-right{
+                                                   
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .center-bottom-right-bottom{
+                                    .comments-left-container{
+                                      
+                                        .comments-left-wrapper{
+                                             p{
+                                               
+                                             }
+                                            .hr{
+                                                margin: 8px 0 0;
+                                                opacity: 0.3;
+                                            }
+                                            .learner-info{
+                                               
+                                                .info-left{
+                                                    display: flex;
+                                                    gap: 12px;
+                                                    align-items: center;
+                           
+                                                    .user-img{
+                                                        img{
+                                                           
+                                                        }
+                                                    }
+                                                    .info-body{
+                                                        
+                                                        h3{
+                                                            
+                                                        }
+                                                        span{
+                                                            
+                                                        }
+                                                    }
+                                                }
+                                                .info-right{
+                                                    
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .graduate-comment-contents-right{
+                       
+                        .comments-left-container{
+                          
+                            .comments-left-wrapper{
+                                 p{
+                                 }
+                                .hr{
+                                    margin: 8px 0 0;
+                                    opacity: 0.3;
+                                }
+                                .learner-info{
+                                   
+                                    .info-left{
+                                        display: flex;
+                                        gap: 12px;
+                                        align-items: center;
+                                        .user-img{
+                                            img{              
+                                            }
+                                        }
+                                        .info-body{                                          
+                                            h3{
+                                               
+                                            }
+                                            span{
+                                               
+                                            }
+                                        }
+                                    }
+                                    .info-right{
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media(max-width : 1023px){
+    .graduate-comment{
+
+        .graduate-comment-container{
+            max-width: 500px;
+           
+        }
+    }
+    
+}
+
+@media(max-width : 639px){
+    .graduate-comment{
+
+        .graduate-comment-container{
+            max-width: 100%;
+           
+        }
+    }
+    
+}

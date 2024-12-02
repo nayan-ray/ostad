@@ -9,6 +9,7 @@ import LiveCourse from '../../components/liveCourse/LiveCourse'
 import CodeMama from '../../homeComponents/codeMama/CodeMama'
 import Business from '../../homeComponents/business/Business'
 import RateCount from '../../homeComponents/rateCount/RateCount'
+import GraduateComment from '../../homeComponents/graduateComments/GraduateComment'
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
          <CodeMama />
          <Business />
          <RateCount />
+         <GraduateComment />
     </div>
   )
 }
