@@ -1,0 +1,84 @@
+.appSec{
+    padding: 60px 16px;
+    margin-bottom: 50px;
+    background-image: url("../../assets/images/2023-09-26T07-12-37.047Z-bg-app-min.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .appSec-container{
+        max-width: 1150px;
+        margin:0 auto;
+        overflow: hidden;
+        border-radius: 17px;
+        .appSec-wrapper{
+            display: flex;
+            gap: 16px;
+            background: #fff;
+            .appSecItem1{
+                display: none;
+            }
+            .appSecItem2{
+                flex: 0.8;
+            }
+            .appSecItem3{
+                flex: 1.2;
+            }
+            .appSecItem4{
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width :1023px){
+    .appSec{
+       
+        .appSec-container{
+            max-width: 689px;
+
+            .appSec-wrapper{
+                gap: 0;
+                flex-direction: column;
+                background: #fff;
+                .appSecItem1{
+                    display: none;
+                }
+                .appSecItem2{
+                    flex: 1.2;
+                }
+                .appSecItem3{
+                    flex: 0.8;
+                }
+                .appSecItem4{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width :767px){
+    .appSec{
+       
+        .appSec-container{
+            max-width: 500px;
+
+            .appSec-wrapper{
+                gap: 0;
+                flex-direction: column;
+                background: #fff;
+                .appSecItem1{
+                    display: block;
+                }
+                .appSecItem2{
+                    flex: 1.2;
+                }
+                .appSecItem3{
+                    display: none;
+                }
+                .appSecItem4{
+                    display: block;
+                }
+            }
+        }
+    }
+}

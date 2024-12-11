@@ -10,6 +10,8 @@ import CodeMama from '../../homeComponents/codeMama/CodeMama'
 import Business from '../../homeComponents/business/Business'
 import RateCount from '../../homeComponents/rateCount/RateCount'
 import GraduateComment from '../../homeComponents/graduateComments/GraduateComment'
+import AppSec from '../../homeComponents/app/AppSec'
+import Footer from '../../homeComponents/footer/Footer'
 
 const Home = () => {
   return (
@@ -24,6 +26,8 @@ const Home = () => {
          <Business />
          <RateCount />
          <GraduateComment />
+         <AppSec />
+         <Footer />
     </div>
   )
 }
