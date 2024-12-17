@@ -10,11 +10,90 @@
             flex-wrap: wrap;
             gap: 16px;
             .footer-col{
-              width: 259px;
-              background: rebeccapurple;
+               width: 259px;
+              .logo{
+                width: 120px;
+                margin-bottom: 16px;
+              }
+              p{
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5rem;
+                letter-spacing: .32px;
+               
+              }
+              .ostad-app{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    span{
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        color: #000000;
+                    }
+                    .app-store{
+                        display: flex;
+                        gap: 10px;
+                        .app-item{
+                           flex: 1;
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           background: #101828;
+                           padding: 0.75rem 1.5rem;
+                           border-radius: 0.5rem;
+                        }
+                    }
+              }
+            }
+            .footer-col{
+                .lists{
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        margin-bottom: 16px;
+                        cursor: pointer;
+                        p{
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 1.5rem;
+                            letter-spacing: .32px;
+                            color: #000000;
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
             }
             .footer-colL{
                width: 320px;
+               .lists{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li{
+                    margin-bottom: 16px;
+                    cursor: pointer;
+                    p{
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 1.5rem;
+                        letter-spacing: .32px;
+                        color: #000000;
+                        margin-bottom: 24px;
+                    }
+                }
+                .footer-colL-item{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    img{
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
             }
         }
     }
