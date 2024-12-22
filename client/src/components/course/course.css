@@ -34,6 +34,7 @@
                 position: relative;
                 margin-bottom: 24px;
                 overflow: hidden;
+                transition: all 1s ease;
                 .arrow{
                     width: 40px;
                     height: 40px;
@@ -73,6 +74,11 @@
                     align-items: center;
                     flex-wrap: nowrap;
                     overflow-x: auto;
+                    scroll-behavior: smooth;
+                    
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
                 }
             }
         }

@@ -9,44 +9,52 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Course = () => {
   const category = useRef();
-  const [scrollLeft, setScrollLeft] = useState(false);
-  const [scrollRight, setScrollRight] = useState(false);
+  const [isScrollLeftVanish, setScrollLeftVanish] = useState(true);
+  const [isScrollRightVanish, setScrollRightVanish] = useState(false);
  //create a function to scroll the category left and right
+  
+  
  
- let scrollWidth = category.current.scrollWidth;
- let Dimension = category.current.getBoundingClientRect();
- let width = Dimension.width;
- let clientWidth = category.current.clientWidth;
- let scrollLeft1 = category.current.scrollLeft; 
-    console.log(width);
-    console.log(scrollWidth);
-    console.log(clientWidth);
-    console.log(scrollLeft1);
- if(scrollLeft === 0){
-  setScrollLeft(true);
-}else{
-  setScrollLeft(false);
-}
-if(scrollLeft === (scrollWidth - clientWidth)){
-  setScrollRight(true);
-}else{
-  setScrollRight(false);
-}
-
   function handleScroll(direction) {
-   
-
-
-      if(direction === 'left'){
+     let width = category.current.offsetWidth;
+     const categoryScrollWidth = category.current.scrollWidth;
+     let scrollPosition = category.current.scrollLeft;
+    
+     
+      if(direction === 'left'){   
         category.current.scrollLeft -= width;
-      }else{
+         
+      }
+      if(direction === 'right'){
+
         category.current.scrollLeft += width;
+  
+
       }
 
+      // if(category.current.scrollLeft >= categoryScrollWidth - width){
+      //   setScrollRightVanish(true);
+      //   setScrollLeftVanish(false);
+      // }else{
+      //   setScrollLeftVanish(true);
+      //   setScrollRightVanish(false);
+      // }
       
+      if(category.current.scrollLeft <= 0){
+        setScrollLeftVanish(false);
+        setScrollRightVanish(true);
+      }else{
+        setScrollLeftVanish(true);
+
+        setScrollRightVanish(true)
+      }
+      if(category.current.scrollLeft > 0){
+        setScrollRightVanish(false)
+        setScrollLeftVanish(true);
+      }
   }   
   
-  
+
 
   return (
     <div  className="course-section">
@@ -69,10 +77,10 @@ if(scrollLeft === (scrollWidth - clientWidth)){
                               <Category  />
                               <Category  />
                         </div>
-                        <div className="back arrow" onClick={() => handleScroll('left') } style={{display: scrollLeft ? 'none' : ''}}>
+                        <div className="back arrow" onClick={() => handleScroll('left') } style={{display: isScrollLeftVanish ? 'none' : ''}}>
                               <ArrowBackIosIcon  className='Icon' /> 
                         </div>
-                        <div className="forward arrow" onClick={() => handleScroll('right') } style={{display: scrollRight ? 'none' : ''}}>
+                        <div className="forward arrow" onClick={() => handleScroll('right') } style={{display: isScrollRightVanish ? 'none' : ''}}>
                               <ArrowForwardIosIcon className='Icon' />
                         </div>
                     </div>
