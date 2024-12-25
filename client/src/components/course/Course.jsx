@@ -40,18 +40,41 @@ const Course = () => {
       //   setScrollRightVanish(false);
       // }
       
-      if(category.current.scrollLeft <= 0){
-        setScrollLeftVanish(false);
-        setScrollRightVanish(true);
-      }else{
-        setScrollLeftVanish(true);
+      // if(category.current.scrollLeft <= 0){
+      //   setScrollLeftVanish(false);
+      //   setScrollRightVanish(true);
+      // }else{
+      //   setScrollLeftVanish(true);
 
-        setScrollRightVanish(true)
+      //   setScrollRightVanish(true)
+      // }
+      // if(category.current.scrollLeft > 0){
+      //   setScrollRightVanish(false)
+      //   setScrollLeftVanish(true);
+      // }
+
+      console.log(`width : ${width}`);
+      console.log(`categoryScrollWith : ${categoryScrollWidth}`);
+      console.log(` scrollLeft: ${scrollPosition}`);
+      console.log(`category.current.scrollLeft : ${category.current.scrollLeft}`);
+      console.log(categoryScrollWidth - width);
+
+      if(scrollPosition + width > 0){
+        setScrollRightVanish(true);
+        setScrollLeftVanish(false);
+      }else{
+        setScrollRightVanish(false);
       }
-      if(category.current.scrollLeft > 0){
-        setScrollRightVanish(false)
-        setScrollLeftVanish(true);
+
+      if(scrollPosition <= 0){
+         setScrollLeftVanish(true);
+         setScrollRightVanish(false);
+      }else{
+        setScrollLeftVanish(false);
       }
+
+     
+      
   }   
   
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./topbar.css"
 import dashboard from "../../assets/images/dashboard-line.svg";
 import logo from "../../assets/images/ostadlogo.png";
@@ -14,8 +14,33 @@ import SpecialButton from '../specialButton/SpecialButton';
 
 const Topbar = () => {
   const [isLogged, setIslogged] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
+  let scrollValue = 0;
+
+  const handleScroll =()=>{
+   
+    let topy = window.scrollY;
+     if(topy < scrollValue){   
+      setIsScrolled(false);
+       console.log('visible')
+     }else if(topy > scrollValue){
+      setIsScrolled(true);
+       console.log('hidden');
+      }else{
+        setIsScrolled(false);
+        console.log('hidden no');
+      }
+     scrollValue = topy;
+  }
+
+  useEffect(()=>{
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      };
+  },[])
   return (
-    <div className='topBar'>
+    <div className={`topBar ${isScrolled ? "scrolled" : ""} `}>
           <div className="topBar-wrapper">
                <div className="topBar-left">
                      <img className='small-topBar-logo' src="https://cdn.ostad.app/public/upload/2024-03-10T05-11-30.796Z-single-logo.svg" alt="" />

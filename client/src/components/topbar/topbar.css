@@ -5,8 +5,11 @@
     padding: 15px 20px;
     box-shadow: 0 4px 8px -8px rgba(8, 31, 77, .2);
     transition: all 1s ease-in-out ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 
-  
     .topBar-wrapper{
         /* padding: 15px 20px; */
         transition: all 1s;
@@ -206,7 +209,9 @@
     }
 }
 
-
+.scrolled{
+    top: -72px;
+  }
 
 .dropdown-mobile{
         display: none;
