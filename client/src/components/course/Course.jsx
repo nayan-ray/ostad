@@ -6,6 +6,7 @@ import CourseItem from '../courseItem/CourseItem'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import CatContainer from '../coursesComponent/categoryCon/CatContainer'
 
 const Course = () => {
   const category = useRef();
@@ -89,24 +90,7 @@ const Course = () => {
                             <img src={bookIcon} alt="" />
                         </div>
                     </div>
-                    <div className="course-center">
-                        <div className="course-center-container" ref={category}>
-                              <Category  />
-                              <Category  />
-                              <Category  />
-                              <Category  />
-                              <Category  />
-                              <Category  />
-                              <Category  />
-                              <Category  />
-                        </div>
-                        <div className="back arrow" onClick={() => handleScroll('left') } style={{display: isScrollLeftVanish ? 'none' : ''}}>
-                              <ArrowBackIosIcon  className='Icon' /> 
-                        </div>
-                        <div className="forward arrow" onClick={() => handleScroll('right') } style={{display: isScrollRightVanish ? 'none' : ''}}>
-                              <ArrowForwardIosIcon className='Icon' />
-                        </div>
-                    </div>
+                    <CatContainer />
                     <div className="course-bottom">
                         <CourseItem  />
                         <CourseItem  />

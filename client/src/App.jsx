@@ -1,3 +1,4 @@
+import Courses from "./pages/courses/Courses"
 import Home from "./pages/home/Home"
 
 
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
       <div>
-          <Home />
+          {/* <Home /> */}
+          <Courses />
       </div>
     </>
   )
