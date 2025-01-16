@@ -1,0 +1,28 @@
+.category_container{
+   
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+.category_wrapper{
+    margin-top: 180px;
+   
+}
+
+.down{
+   
+    margin-top: 0px;
+}
+.up{
+ 
+    margin-top: 70px;
+
+}
+
+.courses-container{
+    margin-top: 280px;
+}

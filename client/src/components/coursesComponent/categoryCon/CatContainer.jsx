@@ -4,12 +4,14 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 import "./catContainer.css"
+import { damyData } from '../../../damaData/data';
 
 
 const CatContainer = () => {
       const category = useRef();
       const [isScrollLeftVanish, setScrollLeftVanish] = useState(true);
       const [isScrollRightVanish, setScrollRightVanish] = useState(false);
+      const [navData, setNavData] = useState(damyData);
      //create a function to scroll the category left and right
       
       
@@ -76,17 +78,20 @@ const CatContainer = () => {
           
       }  
   return (
-    
+    <div className='category-container' >
          <div className="course-center">
                         <div className="course-center-container" ref={category}>
+                             {damyData.map((item, i)=>{
+                                  return  <Category key={i} item={item} />
+                             })}
+                              
+                              {/* <Category  />
                               <Category  />
                               <Category  />
                               <Category  />
                               <Category  />
                               <Category  />
-                              <Category  />
-                              <Category  />
-                              <Category  />
+                              <Category  /> */}
                         </div>
                         <div className="back arrow" onClick={() => handleScroll('left') } style={{display: isScrollLeftVanish ? 'none' : ''}}>
                               <ArrowBackIosIcon  className='Icon' /> 
@@ -95,7 +100,7 @@ const CatContainer = () => {
                               <ArrowForwardIosIcon className='Icon' />
                         </div>
          </div>
-
+   </div>
   )
 }
 

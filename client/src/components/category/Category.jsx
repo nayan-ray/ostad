@@ -2,9 +2,17 @@ import React from 'react'
 import "./category.css"
 import box_line from "../../assets/images/code-box-line.png"
 
-const Category = () => {
+const Category = ({item}) => {
+  const handleCatClick = (id)=>{
+    const sect = window.document.getElementById(id);
+    if(sect){
+       const  scrollYZ = sect.getBoundingClientRect().top + window.scrollY  - 200;
+       window.scrollTo({top: scrollYZ, behavior: 'smooth'});
+    }
+ }
   return (
-    <div  className="category">
+    
+        <div  onClick={()=> handleCatClick(item)} className="category">
         <div className="category-wrapper">
              <div className="img-container">
                  <img src={box_line} alt="" />
@@ -17,6 +25,8 @@ const Category = () => {
         </div>
        
     </div>
+   
+    
   )
 }
 

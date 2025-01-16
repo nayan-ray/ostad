@@ -1,15 +1,15 @@
-import React, { useRef, useState } from 'react'
-import "./course.css"
-import bookIcon from "../../assets/images/book-2-icons.svg"
-import CourseItem from '../courseItem/CourseItem'
+import React from 'react'
+
+import bookIcon from "../../../assets/images/book-2-icons.svg"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import CatContainer from '../coursesComponent/categoryCon/CatContainer'
+import "./itemContainer.css"
+import CourseItem from '../../courseItem/CourseItem'
 
-const Course = () => {
-
-
-  return (
-    <div  className="course-section">
+const ItemContainer = ({item}) => {
+   
+return (
+ <div id={item}>
+      <div  className="course-section">
          <div className="course-container">
                <div className="course-wrapper">
                     <div className="course-top">
@@ -18,9 +18,9 @@ const Course = () => {
                             <img src={bookIcon} alt="" />
                         </div>
                     </div>
-                    <CatContainer />
+                    
                     <div className="course-bottom">
-                        <CourseItem  />
+                        <CourseItem />
                         <CourseItem  />
                         <CourseItem  />
                         <CourseItem  />
@@ -38,7 +38,9 @@ const Course = () => {
                </div>
          </div>
     </div>
+ </div>    
+     
   )
 }
 
-export default Course
+export default ItemContainer
