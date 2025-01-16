@@ -6,7 +6,7 @@
     margin: auto;
     .course-center{
         position: relative;
-        margin-bottom: 24px;
+        /* margin-bottom: 24px; */
         overflow: hidden;
         /* transition: all 1s ease; */
         .arrow{

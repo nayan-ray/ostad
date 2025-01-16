@@ -6,7 +6,7 @@ const Category = ({item}) => {
   const handleCatClick = (id)=>{
     const sect = window.document.getElementById(id);
     if(sect){
-       const  scrollYZ = sect.getBoundingClientRect().top + window.scrollY  - 200;
+       const  scrollYZ = sect.getBoundingClientRect().top + window.scrollY - 70;
        window.scrollTo({top: scrollYZ, behavior: 'smooth'});
     }
  }
